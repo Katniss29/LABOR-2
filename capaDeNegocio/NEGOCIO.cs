@@ -71,5 +71,22 @@ namespace capaDeNegocio
             return salario;
         }
 
+        public double impuestos(double pIngresos)
+        {
+            double impuestos = 0;
+            double impuesto1 = 0.09;
+            double impuesto2 = 0.12;
+            if (pIngresos >= 3000 && pIngresos <= 5000)
+            {
+                double temp = pIngresos * impuesto1;
+                impuestos = pIngresos + temp;
+            }else if ( pIngresos > 5000)
+            {
+                double temp = pIngresos * impuesto2;
+                impuestos = pIngresos + temp;
+            }
+
+            return impuestos;
+        }
     }
 }
