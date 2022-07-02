@@ -10,6 +10,7 @@ namespace capaDeDatos
     {
         private String tipoCargoAdministrativo;
         private int cantidadAcciones;
+        
 
         public DUENNO(String pNombre, String pApellido1,
                        String pApellido2, int pEdad, int pTelefono, String pDireccion,String pTipoCargoAdministrativo, int pCantidadAcciones)
@@ -36,5 +37,7 @@ namespace capaDeDatos
             get { return cantidadAcciones; }
             set { cantidadAcciones = value; }
         }
+
+        
     }
 }

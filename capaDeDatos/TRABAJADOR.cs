@@ -24,8 +24,8 @@ namespace capaDeDatos
 
         public String TipoCargo
         {
-            get { return TipoCargo1; }
-            set { TipoCargo1 = value; }
+            get { return tipoCargo; }
+            set { tipoCargo = value; }
         }
 
         public double HorasTrabajadas
