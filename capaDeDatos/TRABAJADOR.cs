@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace capaDeDatos
 {
-    public class TRABAJADOR
+    public class TRABAJADOR : PERSONA
     {
 
         private String tipoCargo;
         private double horasTrabajadas;
         private String tipoJornada;
 
-        public TRABAJADOR( String pTipoCargo, double pHorasTrabajadas, String pTipoJornada)
+        public TRABAJADOR(String pNombre, String pApellido1,
+                       String pApellido2, int pEdad, int pTelefono, String pDireccion ,String pTipoCargo, double pHorasTrabajadas, String pTipoJornada)
+            : base ( pNombre,  pApellido1, pApellido2,  pEdad,  pTelefono,  pDireccion)
         {
             this.tipoCargo = pTipoCargo;
             this.horasTrabajadas = pHorasTrabajadas;
@@ -22,8 +24,8 @@ namespace capaDeDatos
 
         public String TipoCargo
         {
-            get { return tipoCargo; }
-            set { tipoCargo = value; }
+            get { return TipoCargo1; }
+            set { TipoCargo1 = value; }
         }
 
         public double HorasTrabajadas
@@ -37,5 +39,6 @@ namespace capaDeDatos
             set { tipoJornada= value; }
         }
 
+        
     }
 }

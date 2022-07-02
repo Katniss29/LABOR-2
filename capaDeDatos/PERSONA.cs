@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace capaDeDatos
 {
-    public class PERSONA
+    public abstract class PERSONA
     {
 
         private String nombre;
